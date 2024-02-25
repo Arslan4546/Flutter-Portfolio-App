@@ -12,11 +12,11 @@ class MyApp extends StatelessWidget {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor:Color(0xFFE6E6E6),
+        backgroundColor:const Color(0xFFE6E6E6),
         appBar: AppBar(
-          backgroundColor: Color(0xFF2A2D41),
-          iconTheme: IconThemeData(color: Colors.white),
-              title:Text("Summery",style: TextStyle(
+          backgroundColor:const Color(0xFF2A2D41),
+          iconTheme: const IconThemeData(color: Colors.white),
+              title:const Text("Summery",style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
                 color: Colors.white
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         ),
         drawer: Drawer(
             child: Container(
-              color: Color(0xFFFFFFFF),
+              color: const Color(0xFFFFFFFF),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -51,13 +51,13 @@ class MyApp extends StatelessWidget {
                                 Container(
                                   height: 80,
                                   width: 80,
-                                   margin: EdgeInsets.only(top: 50),
+                                   margin:const EdgeInsets.only(top: 50),
                                   decoration: BoxDecoration(
                                       border:Border.all(color: Colors.white,width: 2),
                                       color: Colors.white,
                                       shape: BoxShape.circle,
-                                      image: DecorationImage(
-                                        image:const AssetImage("assets/images/arslan.png"),
+                                      image:const DecorationImage(
+                                        image:AssetImage("assets/images/arslan.png"),
                                         fit: BoxFit.cover,
                                       )
 
@@ -248,8 +248,8 @@ class MyApp extends StatelessWidget {
                       decoration: BoxDecoration(
                           color: const Color(0xFFFFFFFF),
                         borderRadius: BorderRadius.circular(10),
-                        boxShadow: [
-                           BoxShadow(
+                        boxShadow: const [
+                            BoxShadow(
                             blurRadius: 2.0,
                             spreadRadius: 1.0,
                             color: Colors.grey
@@ -299,7 +299,7 @@ class MyApp extends StatelessWidget {
                       decoration: BoxDecoration(
                           color:const Color(0xFFFFFFFF),
                           borderRadius: BorderRadius.circular(10),
-                          boxShadow: [
+                          boxShadow: const [
                               BoxShadow(
                                 blurRadius: 2.0,
                                 spreadRadius: 1.0,
@@ -357,7 +357,7 @@ class MyApp extends StatelessWidget {
                       decoration: BoxDecoration(
                           color: const Color(0xFFFFFFFF),
                           borderRadius: BorderRadius.circular(10),
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                                 blurRadius: 2.0,
                                 spreadRadius: 1.0,
@@ -404,9 +404,9 @@ class MyApp extends StatelessWidget {
 
                       margin:const EdgeInsets.symmetric(horizontal: 10),
                       decoration: BoxDecoration(
-                          color: Color(0xFFFFFFFF),
+                          color: const Color(0xFFFFFFFF),
                           borderRadius: BorderRadius.circular(10),
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                                 blurRadius: 2.0,
                                 spreadRadius: 1.0,
@@ -514,7 +514,7 @@ class MyApp extends StatelessWidget {
 
                       ],
                     ),
-                    Divider(
+                    const  Divider(
                       color: Colors.grey,
                     ),
                     const  SizedBox(height: 10,),
@@ -524,13 +524,15 @@ class MyApp extends StatelessWidget {
                         const  SizedBox(width: 10,),
                         Expanded(
 
+                          flex: 2,
+
                           child: Container(
                          height: 30,
 
                             decoration: BoxDecoration(
-                              color: Color(0xFFFFFFFF),
+                              color:const Color(0xFFFFFFFF),
                               borderRadius: BorderRadius.circular(20),
-                              boxShadow: [
+                              boxShadow:const [
                                 BoxShadow(
                                   blurRadius: 1,
                                   spreadRadius: 1,
@@ -539,22 +541,22 @@ class MyApp extends StatelessWidget {
                               ],
 
                             ),
-                            child: Center(child: Text("Flutter Development",textAlign: TextAlign.center,
+                            child:const Center(child: Text("Flutter Development",textAlign: TextAlign.center,
                             style: TextStyle(
                               fontSize: 12,
                             ),)),
                           ),
-                          flex: 2,
                         ),
-                        SizedBox(width: 10,),
+                        const  SizedBox(width: 10,),
                         Expanded(
+                          flex: 2,
                           child: Container(
                             height: 30,
 
                             decoration: BoxDecoration(
-                              color: Color(0xFFFFFFFF),
+                              color:const Color(0xFFFFFFFF),
                               borderRadius: BorderRadius.circular(20),
-                              boxShadow: [
+                              boxShadow:const [
                                 BoxShadow(
                                     blurRadius:1,
                                     spreadRadius: 1,
@@ -563,21 +565,20 @@ class MyApp extends StatelessWidget {
                               ],
 
                             ),
-                            child: Center(child: Text("Dart Master",textAlign: TextAlign.center,  style: TextStyle(
+                            child:const Center(child: Text("Dart Master",textAlign: TextAlign.center,  style: TextStyle(
                               fontSize: 12,
                             ),)),
                           ),
-                          flex: 2,
                         ),
-                        SizedBox(width: 10,),
+                        const  SizedBox(width: 10,),
                         Expanded(
                           child: Container(
                             height: 30,
 
                             decoration: BoxDecoration(
-                              color: Color(0xFFFFFFFF),
+                              color:const Color(0xFFFFFFFF),
                               borderRadius: BorderRadius.circular(20),
-                              boxShadow: [
+                              boxShadow:const [
                                 BoxShadow(
                                     blurRadius: 1,
                                     spreadRadius: 1,
@@ -586,30 +587,32 @@ class MyApp extends StatelessWidget {
                               ],
 
                             ),
-                            child: Center(child: Text("UI/UX",textAlign: TextAlign.center,  style: TextStyle(
+                            child: const Center(child: Text("UI/UX",textAlign: TextAlign.center,  style: TextStyle(
                               fontSize: 12,
                             ),)),
                           ),
                         ),
-                        SizedBox(width: 10,),
+                        const  SizedBox(width: 10,),
 
 
                       ],
                     ),
-                    SizedBox(height: 10,),
+                    const  SizedBox(height: 10,),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        SizedBox(width: 10,),
+                        const  SizedBox(width: 10,),
                         Expanded(
 
-                          child: Container(
+                          flex: 2,
+
+                          child:Container(
                             height: 30,
 
                             decoration: BoxDecoration(
-                              color: Color(0xFFFFFFFF),
+                              color: const Color(0xFFFFFFFF),
                               borderRadius: BorderRadius.circular(20),
-                              boxShadow: [
+                              boxShadow:const [
                                 BoxShadow(
                                     blurRadius:1,
                                     spreadRadius: 1,
@@ -618,44 +621,21 @@ class MyApp extends StatelessWidget {
                               ],
 
                             ),
-                            child: Center(child: Text("Java Ehthusiast ",textAlign: TextAlign.center,  style: TextStyle(
+                            child: const Center(child: Text("Java Ehthusiast ",textAlign: TextAlign.center,  style: TextStyle(
                               fontSize: 12,
                             ),)),
                           ),
-                          flex: 2,
                         ),
-                        SizedBox(width: 10,),
+                        const  SizedBox(width: 10,),
                         Expanded(
-                          child: Container(
-                            height: 30,
-
-                            decoration: BoxDecoration(
-                              color: Color(0xFFFFFFFF),
-                              borderRadius: BorderRadius.circular(20),
-                              boxShadow: [
-                                BoxShadow(
-                                    blurRadius: 1,
-                                    spreadRadius: 1,
-                                    color: Colors.grey
-                                )
-                              ],
-
-                            ),
-                            child: Center(child: Text("Python ",textAlign: TextAlign.center,  style: TextStyle(
-                              fontSize: 12,
-                            ),)),
-                          ),
                           flex: 1,
-                        ),
-                        SizedBox(width: 10,),
-                        Expanded(
                           child: Container(
                             height: 30,
 
                             decoration: BoxDecoration(
-                              color: Color(0xFFFFFFFF),
+                              color: const Color(0xFFFFFFFF),
                               borderRadius: BorderRadius.circular(20),
-                              boxShadow: [
+                              boxShadow:const [
                                 BoxShadow(
                                     blurRadius: 1,
                                     spreadRadius: 1,
@@ -664,12 +644,34 @@ class MyApp extends StatelessWidget {
                               ],
 
                             ),
-                            child: Center(child: Text("ML/AI",textAlign: TextAlign.center,  style: TextStyle(
+                            child:const Center(child: Text("Python ",textAlign: TextAlign.center,  style: TextStyle(
                               fontSize: 12,
                             ),)),
                           ),
                         ),
-                        SizedBox(width: 10,),
+                        const  SizedBox(width: 10,),
+                        Expanded(
+                          child: Container(
+                            height: 30,
+
+                            decoration: BoxDecoration(
+                              color:const Color(0xFFFFFFFF),
+                              borderRadius: BorderRadius.circular(20),
+                              boxShadow:const [
+                                BoxShadow(
+                                    blurRadius: 1,
+                                    spreadRadius: 1,
+                                    color: Colors.grey
+                                )
+                              ],
+
+                            ),
+                            child:const Center(child: Text("ML/AI",textAlign: TextAlign.center,  style: TextStyle(
+                              fontSize: 12,
+                            ),)),
+                          ),
+                        ),
+                        const  SizedBox(width: 10,),
 
 
 

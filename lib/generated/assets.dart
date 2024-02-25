@@ -2,22 +2,14 @@
 class Assets {
   Assets._();
 
-  static const String imagesAhmad = 'assets/images/ahmad.jpg';
   static const String imagesArslan = 'assets/images/arslan.png';
   static const String imagesGithub = 'assets/images/github.png';
-  static const String imagesImage2 = 'assets/images/image2.png';
   static const String imagesLinkedin = 'assets/images/linkedin.png';
   static const String imagesRe1 = 'assets/images/re1.png';
-  static const String imagesResume = 'assets/images/resume.png';
-  static const String imagesResume1 = 'assets/images/resume1.png';
-  static const String imagesResume2 = 'assets/images/resume2.png';
-  static const String imagesSu = 'assets/images/su.png';
-  static const String imagesWal5 = 'assets/images/wal5.png';
-  static const String imagesWal7 = 'assets/images/wal7.png';
-  static const String imagesWal8 = 'assets/images/wal8.png';
   static const String imagesWal9 = 'assets/images/wal9.png';
-  static const String imagesWall = 'assets/images/wall.png';
   static const String imagesWallp = 'assets/images/wallp.png';
   static const String imagesWebsite = 'assets/images/website.png';
+  static const String screenshootSs1 = 'assets/screenshoot/ss1.png';
+  static const String screenshootSs2 = 'assets/screenshoot/ss2.png';
 
 }
