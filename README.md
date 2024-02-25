@@ -28,9 +28,7 @@ This app not only serves as a portfolio but also as a reflection of Arslan Tariq
 
 
 ## 🔗 Links
-[![Linkedin](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://linkedin.come/in/arslan4546/)
-[![FaceBook](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.FaceBook.com/Arslan4546/)
-[![Instagram](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://www.Instagram.com/arslantariq4546/)
+[![LinkedIn](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/arslan4546/)
 
 
 
