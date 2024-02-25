@@ -13,7 +13,7 @@ This app not only serves as a portfolio but also as a reflection of Arslan Tariq
 
 🚀 Over the years, I've honed my skills in Flutter, Google's UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase. I'm constantly exploring the latest features and best practices in Flutter to deliver high-quality, user-centric solutions.
 
-💼 My journey in software development has equipped me with a diverse set of skills, including frontend and backend development, UI/UX design, and project management. I believe in the power of collaboration and enjoy working closely with clients and stakeholders to bring their visions to life.
+💼 My journey in softwar Flutter development has equipped me with a diverse set of skills, including frontend and backend development, UI/UX design, and project management. I believe in the power of collaboration and enjoy working closely with clients and stakeholders to bring their visions to life.
 
 🌟 Whether it's creating intuitive user interfaces, optimizing app performance, or solving complex problems, I'm dedicated to delivering exceptional results that exceed expectations. I thrive in dynamic environments where I can innovate, learn, and grow as a developer.
 
@@ -28,14 +28,10 @@ This app not only serves as a portfolio but also as a reflection of Arslan Tariq
 
 
 ## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
+[![Linkedin](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://linkedin.come/in/arslan4546/)
+[![FaceBook](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.FaceBook.com/Arslan4546/)
+[![Instagram](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://www.Instagram.com/arslantariq4546/)
 
 
-## Badges
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
-[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 
