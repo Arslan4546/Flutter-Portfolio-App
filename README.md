@@ -27,9 +27,13 @@ This app not only serves as a portfolio but also as a reflection of Arslan Tariq
 ![App Screenshot](https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/SS2.png)
 
 
-## 🔗 Links
-[![LinkedIn](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/arslan4546/)
+## Contact Me
 
+LinkedIn:https://www.linkedin.com/in/arslan4546/
+GitHub:https://github.com/Arslan4546
+Facebook:https://www.Facebook.com/Arslan4546
+Instagram:https://www.instagram.com/arslantariq4546
+Email: arslantariq4546@gmail.com
 
 
 
