@@ -467,53 +467,58 @@ class MyApp extends StatelessWidget {
               Row(
                 children: [
                   Expanded(
-                    child: Container(
-                      height: 70,
-                      margin: const EdgeInsets.symmetric(horizontal: 10),
-                      decoration: BoxDecoration(
-                          color: const Color(0xFFFFFFFF),
-                          borderRadius: BorderRadius.circular(10),
-                          boxShadow: const [
-                            BoxShadow(
-                                blurRadius: 2.0,
-                                spreadRadius: 1.0,
-                                color: Colors.grey)
-                          ]),
-                      child: Row(
-                        children: [
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          Container(
-                            height: 40,
-                            width: 30,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(5),
-                                image: const DecorationImage(
-                                  image: AssetImage("assets/images/re1.png"),
-                                  fit: BoxFit.cover,
-                                )),
-                          ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          const Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                "Resume",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold, fontSize: 15),
-                              ),
-                              Text(
-                                "Visit My Resume",
-                                style: TextStyle(
-                                  fontSize: 10,
+                    child: GestureDetector(
+                      onTap: (){
+                        openUrl("https://drive.google.com/file/d/1UF7budlrVwVmnlmpywrMdFqd26qtctVP/view?pli=1");
+                      },
+                      child: Container(
+                        height: 70,
+                        margin: const EdgeInsets.symmetric(horizontal: 10),
+                        decoration: BoxDecoration(
+                            color: const Color(0xFFFFFFFF),
+                            borderRadius: BorderRadius.circular(10),
+                            boxShadow: const [
+                              BoxShadow(
+                                  blurRadius: 2.0,
+                                  spreadRadius: 1.0,
+                                  color: Colors.grey)
+                            ]),
+                        child: Row(
+                          children: [
+                            const SizedBox(
+                              width: 10,
+                            ),
+                            Container(
+                              height: 40,
+                              width: 30,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(5),
+                                  image: const DecorationImage(
+                                    image: AssetImage("assets/images/re1.png"),
+                                    fit: BoxFit.cover,
+                                  )),
+                            ),
+                            const SizedBox(
+                              width: 10,
+                            ),
+                            const Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  "Resume",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold, fontSize: 15),
                                 ),
-                              ),
-                            ],
-                          ),
-                        ],
+                                Text(
+                                  "Visit My Resume",
+                                  style: TextStyle(
+                                    fontSize: 10,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),
