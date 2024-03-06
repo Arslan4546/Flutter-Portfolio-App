@@ -164,24 +164,29 @@ class MyApp extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                const Row(
-                  children: [
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Icon(
-                      Icons.insert_drive_file_outlined,
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      "Portfolio",
-                      style:
-                          TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-                    ),
-                  ],
-                ),
+                 GestureDetector(
+                   onTap: (){
+                     openUrl("https://drive.google.com/file/d/1UF7budlrVwVmnlmpywrMdFqd26qtctVP/view?pli=1");
+                   },
+                   child: Row(
+                    children: [
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Icon(
+                        Icons.insert_drive_file_outlined,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        "Portfolio",
+                        style:
+                            TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                                   ),
+                 ),
                 const SizedBox(
                   height: 20,
                 ),
