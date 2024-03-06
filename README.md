@@ -22,9 +22,10 @@ This app not only serves as a portfolio but also as a reflection of Arslan Tariq
 
 ## Screenshots
 
-![App Screenshot](https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/SS1.png)
-
-![App Screenshot](https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/SS2.png)
+<p align="center">
+  <img src="https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/SS1.png" alt="Screenshot 1" width="30%" style="margin: 0 40px;"/>
+  <img src="https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/SS2.png" alt="Screenshot 2" width="30%" style="margin: 0 40px;"/>
+</p>
 
 
 ## Contact Me
