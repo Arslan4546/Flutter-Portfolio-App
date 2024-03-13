@@ -168,7 +168,7 @@ class MyApp extends StatelessWidget {
                    onTap: (){
                      openUrl("https://drive.google.com/file/d/1UF7budlrVwVmnlmpywrMdFqd26qtctVP/view?pli=1");
                    },
-                   child: Row(
+                   child: const Row(
                     children: [
                       SizedBox(
                         width: 10,
