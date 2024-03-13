@@ -7,8 +7,9 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-  Future<void> openUrl(String url)async{
-    if(!await launchUrl(Uri.parse(url),mode: LaunchMode.externalApplication)){
+  Future<void> openUrl(String url) async {
+    if (!await launchUrl(Uri.parse(url),
+        mode: LaunchMode.externalApplication)) {
       throw Exception("could not fount $url");
     }
   }
@@ -164,11 +165,12 @@ class MyApp extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                 GestureDetector(
-                   onTap: (){
-                     openUrl("https://drive.google.com/file/d/1UF7budlrVwVmnlmpywrMdFqd26qtctVP/view?pli=1");
-                   },
-                   child: const Row(
+                GestureDetector(
+                  onTap: () {
+                    openUrl(
+                        "https://drive.google.com/file/d/1UF7budlrVwVmnlmpywrMdFqd26qtctVP/view?pli=1");
+                  },
+                  child: const Row(
                     children: [
                       SizedBox(
                         width: 10,
@@ -181,12 +183,12 @@ class MyApp extends StatelessWidget {
                       ),
                       Text(
                         "Portfolio",
-                        style:
-                            TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                            fontSize: 15, fontWeight: FontWeight.bold),
                       ),
                     ],
-                                   ),
-                 ),
+                  ),
+                ),
                 const SizedBox(
                   height: 20,
                 ),
@@ -351,7 +353,7 @@ class MyApp extends StatelessWidget {
                 children: [
                   Expanded(
                     child: GestureDetector(
-                      onTap: (){
+                      onTap: () {
                         openUrl("https://github.com/arslan4546");
                       },
                       child: Container(
@@ -378,7 +380,8 @@ class MyApp extends StatelessWidget {
                                   shape: BoxShape.circle,
                                   color: Colors.black54,
                                   image: DecorationImage(
-                                    image: AssetImage("assets/images/github.png"),
+                                    image:
+                                        AssetImage("assets/images/github.png"),
                                     fit: BoxFit.cover,
                                   )),
                             ),
@@ -391,7 +394,8 @@ class MyApp extends StatelessWidget {
                                 Text(
                                   "Github",
                                   style: TextStyle(
-                                      fontWeight: FontWeight.bold, fontSize: 15),
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15),
                                 ),
                                 Text(
                                   "Visit My Github",
@@ -408,7 +412,7 @@ class MyApp extends StatelessWidget {
                   ),
                   Expanded(
                     child: GestureDetector(
-                      onTap: (){
+                      onTap: () {
                         openUrl("https://linkedin.com/in/arslan4546");
                       },
                       child: Container(
@@ -435,8 +439,8 @@ class MyApp extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(10),
                                   color: Colors.black54,
                                   image: const DecorationImage(
-                                    image:
-                                        AssetImage("assets/images/linkedin.png"),
+                                    image: AssetImage(
+                                        "assets/images/linkedin.png"),
                                     fit: BoxFit.cover,
                                   )),
                             ),
@@ -449,7 +453,8 @@ class MyApp extends StatelessWidget {
                                 Text(
                                   "Linkedin",
                                   style: TextStyle(
-                                      fontWeight: FontWeight.bold, fontSize: 15),
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15),
                                 ),
                                 Text(
                                   "Visit My Linkedin",
@@ -473,8 +478,9 @@ class MyApp extends StatelessWidget {
                 children: [
                   Expanded(
                     child: GestureDetector(
-                      onTap: (){
-                        openUrl("https://drive.google.com/file/d/1UF7budlrVwVmnlmpywrMdFqd26qtctVP/view?pli=1");
+                      onTap: () {
+                        openUrl(
+                            "https://drive.google.com/file/d/1UF7budlrVwVmnlmpywrMdFqd26qtctVP/view?pli=1");
                       },
                       child: Container(
                         height: 70,
@@ -512,7 +518,8 @@ class MyApp extends StatelessWidget {
                                 Text(
                                   "Resume",
                                   style: TextStyle(
-                                      fontWeight: FontWeight.bold, fontSize: 15),
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15),
                                 ),
                                 Text(
                                   "Visit My Resume",
