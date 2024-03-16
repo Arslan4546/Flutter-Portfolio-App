@@ -639,7 +639,7 @@ class MyApp extends StatelessWidget {
               ),
               Container(
                 width: double.infinity,
-                height: 175,
+                height: 200,
                 color: Colors.white,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
