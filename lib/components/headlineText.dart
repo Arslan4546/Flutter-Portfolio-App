@@ -14,7 +14,7 @@ class HeadLineText extends StatelessWidget {
         ),),
         const SizedBox(width: 2,),
         Container(
-            margin: const EdgeInsets.only(top: 12),
+            margin: const EdgeInsets.only(top: 8),
             child: Text(text,style: const TextStyle(fontWeight: FontWeight.bold),))
       ],
     );

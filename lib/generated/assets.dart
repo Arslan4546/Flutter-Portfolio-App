@@ -4,6 +4,13 @@ class Assets {
 
   static const String imagesArslan = 'assets/images/arslan.png';
   static const String imagesArslan1 = 'assets/images/arslan1.png';
+  static const String imagesClient1 = 'assets/images/client1.png';
+  static const String imagesClient2 = 'assets/images/client2.png';
+  static const String imagesClient3 = 'assets/images/client3.png';
+  static const String imagesClient4 = 'assets/images/client4.png';
+  static const String imagesClient5 = 'assets/images/client5.png';
+  static const String imagesClient6 = 'assets/images/client6.png';
+  static const String imagesClient7 = 'assets/images/client7.png';
   static const String imagesFacebook = 'assets/images/facebook.png';
   static const String imagesGithub = 'assets/images/github.png';
   static const String imagesLinkedin = 'assets/images/linkedin.png';

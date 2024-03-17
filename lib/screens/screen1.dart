@@ -257,20 +257,30 @@ class _Screen1State extends State<Screen1> {
                 Container(
                   margin:
                       const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-                  child: const Row(
+                  child:  Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      HeadLineText(
+                      const HeadLineText(
                         text: 'Projects',
                         number: '78',
                       ),
-                      HeadLineText(
-                        text: 'Clients',
-                        number: '65',
+                      GestureDetector(
+                        onTap: (){
+                          Navigator.pushNamed(context, "/screen3");
+                        },
+                        child: const HeadLineText(
+                          text: 'Clients',
+                          number: '65',
+                        ),
                       ),
-                      HeadLineText(
-                        text: 'Messages',
-                        number: '92',
+                      GestureDetector(
+                        onTap: (){
+                             Navigator.pushNamed(context, "/screen4");
+                        },
+                        child: const HeadLineText(
+                          text: 'Messages',
+                          number: '92',
+                        ),
                       ),
                     ],
                   ),
