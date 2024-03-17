@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:wtf_sliding_sheet/wtf_sliding_sheet.dart';
+
+import '../components/headlineText.dart';
+
 class Screen1 extends StatefulWidget {
   const Screen1({super.key});
 
@@ -14,19 +20,10 @@ class _Screen1State extends State<Screen1> {
       throw Exception("could not fount $url");
     }
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFE6E6E6),
-      appBar: AppBar(
-        backgroundColor: const Color(0xFF2A2D41),
-        iconTheme: const IconThemeData(color: Colors.white),
-        title: const Text(
-          "Summery",
-          style: TextStyle(
-              fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
-        ),
-      ),
       drawer: Drawer(
         child: Container(
           color: const Color(0xFFFFFFFF),
@@ -34,58 +31,57 @@ class _Screen1State extends State<Screen1> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Container(
-                height: 180,
+                height: 200,
                 width: double.infinity,
-                decoration: const BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/wal9.png'),
-                      fit: BoxFit.cover,
-                    )),
+                color: Colors.blueAccent,
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Container(
-                              height: 80,
-                              width: 80,
-                              margin: const EdgeInsets.only(top: 50),
-                              decoration: BoxDecoration(
-                                  border: Border.all(
-                                      color: Colors.white, width: 2),
-                                  color: Colors.white,
-                                  shape: BoxShape.circle,
-                                  image: const DecorationImage(
-                                    image: AssetImage(
-                                        "assets/images/arslan.png"),
-                                    fit: BoxFit.cover,
-                                  )),
+                            GestureDetector(
+                              onTap:(){
+                                Navigator.pushNamed(context, "/screen2");
+                              },
+                              child: Container(
+                                height: 85,
+                                width: 85,
+                                margin: const EdgeInsets.only(top: 50),
+                                decoration: BoxDecoration(
+                                    border:
+                                        Border.all(color: Colors.white, width: 2),
+                                    color: Colors.white,
+                                    shape: BoxShape.circle,
+                                    image: const DecorationImage(
+                                      image:
+                                          AssetImage("assets/images/arslan.png"),
+                                      fit: BoxFit.cover,
+                                    )),
+                              ),
                             ),
                           ],
                         ),
-                        const Text(
-                          "Arslan Tariq",
-                          style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white),
+                         Text(
+                          "hi, Innocent",
+                          style:  GoogleFonts.orelegaOne(
+                              textStyle: const TextStyle(
+                                  fontSize: 22,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white)),
                         ),
                         const Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Icon(
-                              Icons.location_on_rounded,
+                              Icons.email_outlined,
                               color: Colors.white,
                             ),
-                            SizedBox(
-                              width: 5,
-                            ),
+                            SizedBox(width: 5,),
                             Text(
-                              "Bahawalpur, Pakistan",
+                              "arslantariq4546@gmail.com",
                               style: TextStyle(color: Colors.white),
                             ),
                           ],
@@ -95,767 +91,402 @@ class _Screen1State extends State<Screen1> {
                   ],
                 ),
               ),
-              const SizedBox(
-                height: 30,
+              ListTile(
+                leading: const Icon(Icons.card_giftcard_sharp),
+                title: Text(
+                  "Experience",
+                  style: GoogleFonts.aBeeZee(
+                      textStyle: const TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 17,
+                  )),
+                ),
               ),
-              const Row(
-                children: [
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Icon(
-                    Icons.card_giftcard_sharp,
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text(
-                    "Experience",
-                    style:
-                    TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-                  ),
-                ],
+              ListTile(
+                leading: const Icon(Icons.school),
+                title: Text(
+                  "Education",
+                  style: GoogleFonts.aBeeZee(
+                      textStyle: const TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 17,
+                  )),
+                ),
               ),
-              const SizedBox(
-                height: 20,
-              ),
-              const Row(
-                children: [
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Icon(
-                    Icons.school,
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text(
-                    "Education",
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              const Row(
-                children: [
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Icon(
-                    Icons.indeterminate_check_box,
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text(
-                    "Languages",
-                    style:
-                    TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 20,
+              ListTile(
+                leading: const Icon(Icons.indeterminate_check_box),
+                title: Text(
+                  "Languages",
+                  style: GoogleFonts.aBeeZee(
+                      textStyle: const TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 17,
+                  )),
+                ),
               ),
               GestureDetector(
                 onTap: () {
                   openUrl(
                       "https://drive.google.com/file/d/1UF7budlrVwVmnlmpywrMdFqd26qtctVP/view?pli=1");
                 },
-                child: const Row(
-                  children: [
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Icon(
-                      Icons.insert_drive_file_outlined,
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      "Portfolio",
-                      style: TextStyle(
-                          fontSize: 15, fontWeight: FontWeight.bold),
-                    ),
-                  ],
+                child: ListTile(
+                  leading: const Icon(Icons.insert_drive_file_outlined),
+                  title: Text(
+                    "Portfolio",
+                    style: GoogleFonts.aBeeZee(
+                        textStyle: const TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 17,
+                    )),
+                  ),
                 ),
               ),
-              const SizedBox(
-                height: 20,
+              ListTile(
+                leading: const Icon(Icons.thumb_up_alt_sharp),
+                title: Text(
+                  "Rate",
+                  style: GoogleFonts.aBeeZee(
+                      textStyle: const TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 17,
+                  )),
+                ),
               ),
-              const Row(
-                children: [
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Icon(
-                    Icons.thumb_up_alt_sharp,
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text(
-                    "Rate",
-                    style:
-                    TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-                  ),
-                ],
+              ListTile(
+                leading: const Icon(Icons.share),
+                title: Text(
+                  "Share",
+                  style: GoogleFonts.aBeeZee(
+                      textStyle: const TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 17,
+                  )),
+                ),
               ),
-              const SizedBox(
-                height: 20,
+              ListTile(
+                leading: const Icon(Icons.mail),
+                title: Text(
+                  "Contact",
+                  style: GoogleFonts.aBeeZee(
+                      textStyle: const TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 17,
+                  )),
+                ),
               ),
-              const Row(
-                children: [
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Icon(
-                    Icons.share,
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text(
-                    "Share",
-                    style:
-                    TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              const Row(
-                children: [
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Icon(
-                    Icons.mail,
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text(
-                    "Contact",
-                    style:
-                    TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              const Row(
-                children: [
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Icon(
-                    Icons.settings,
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text(
-                    "Settings",
-                    style:
-                    TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-                  ),
-                ],
+              ListTile(
+                leading: const Icon(Icons.settings),
+                title: Text(
+                  "Settings",
+                  style: GoogleFonts.aBeeZee(
+                      textStyle: const TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 17,
+                  )),
+                ),
               ),
             ],
           ),
         ),
       ),
-      body: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        child: Column(
+      backgroundColor: Colors.lightBlue,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        iconTheme: const IconThemeData(color: Colors.white),
+      ),
+      body: SlidingSheet(
+        elevation: 8,
+        cornerRadius: 16,
+        snapSpec: const SnapSpec(
+          // Enable snapping. This is true by default.
+          snap: true,
+          // Set custom snapping points.
+          snappings: [0.4, 0.7, 1.0],
+          // Define to what the snappings relate to. In this case,
+          // the total available space that the sheet can expand to.
+          positioning: SnapPositioning.relativeToAvailableSpace,
+        ),
+        // The body widget will be displayed under the SlidingSheet
+        // and a parallax effect can be applied to it.
+        body: Column(
           children: [
+            const SizedBox(
+              height: 30,
+            ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Expanded(
-                  child: Container(
-                    height: 190,
-                    width: 20,
-                    decoration: const BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage('assets/images/wallp.png'),
-                          fit: BoxFit.cover,
-                        )),
-                    child: Column(
-                      children: [
-                        const SizedBox(
-                          height: 15,
-                        ),
-                        Container(
-                          height: 90,
-                          width: 90,
-                          decoration: BoxDecoration(
-                            border: Border.all(color: Colors.white, width: 2),
-                            color: Colors.white,
-                            shape: BoxShape.circle,
-                            image: const DecorationImage(
-                              image: AssetImage("assets/images/arslan.png"),
-                              fit: BoxFit.cover,
-                            ),
-                          ),
-                        ),
-                        const Text(
-                          "Arslan Tariq",
-                          style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white),
-                        ),
-                        const Text(
-                          "Flutter Developer",
-                          style: TextStyle(color: Colors.white),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.only(right: 10),
-                          child: const Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Icon(
-                                Icons.apartment,
-                                color: Colors.white,
-                              ),
-                              SizedBox(
-                                width: 5,
-                              ),
-                              Text(
-                                "Freelance Bahawalpur",
-                                style: TextStyle(color: Colors.white),
-                              ),
-                            ],
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
+                Container(
+                  height: 150,
+                  width: 150,
+                  decoration: const BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage("assets/images/arslan.png"),
+                          fit: BoxFit.cover),
+                      color: Colors.black,
+                      shape: BoxShape.circle),
                 ),
               ],
             ),
-            const SizedBox(
-              height: 10,
-            ),
-            Row(
-              children: [
-                Expanded(
-                  child: GestureDetector(
-                    onTap: () {
-                      openUrl("https://github.com/arslan4546");
-                    },
-                    child: Container(
-                      height: 70,
-                      margin: const EdgeInsets.symmetric(horizontal: 10),
-                      decoration: BoxDecoration(
-                          color: const Color(0xFFFFFFFF),
-                          borderRadius: BorderRadius.circular(10),
-                          boxShadow: const [
-                            BoxShadow(
-                                blurRadius: 2.0,
-                                spreadRadius: 1.0,
-                                color: Colors.grey)
-                          ]),
-                      child: Row(
-                        children: [
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          Container(
-                            height: 40,
-                            width: 40,
-                            decoration: const BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: Colors.black54,
-                                image: DecorationImage(
-                                  image:
-                                  AssetImage("assets/images/github.png"),
-                                  fit: BoxFit.cover,
-                                )),
-                          ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          const Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                "Github",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 15),
-                              ),
-                              Text(
-                                "Visit My Github",
-                                style: TextStyle(
-                                  fontSize: 10,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-                Expanded(
-                  child: GestureDetector(
-                    onTap: () {
-                      openUrl("https://linkedin.com/in/arslan4546");
-                    },
-                    child: Container(
-                      height: 70,
-                      margin: const EdgeInsets.symmetric(horizontal: 10),
-                      decoration: BoxDecoration(
-                          color: const Color(0xFFFFFFFF),
-                          borderRadius: BorderRadius.circular(10),
-                          boxShadow: const [
-                            BoxShadow(
-                                blurRadius: 2.0,
-                                spreadRadius: 1.0,
-                                color: Colors.grey)
-                          ]),
-                      child: Row(
-                        children: [
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          Container(
-                            height: 40,
-                            width: 40,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                color: Colors.black54,
-                                image: const DecorationImage(
-                                  image: AssetImage(
-                                      "assets/images/linkedin.png"),
-                                  fit: BoxFit.cover,
-                                )),
-                          ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          const Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                "Linkedin",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 15),
-                              ),
-                              Text(
-                                "Visit My Linkedin",
-                                style: TextStyle(
-                                  fontSize: 10,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            Row(
-              children: [
-                Expanded(
-                  child: GestureDetector(
-                    onTap: () {
-                      openUrl(
-                          "https://drive.google.com/file/d/1UF7budlrVwVmnlmpywrMdFqd26qtctVP/view?pli=1");
-                    },
-                    child: Container(
-                      height: 70,
-                      margin: const EdgeInsets.symmetric(horizontal: 10),
-                      decoration: BoxDecoration(
-                          color: const Color(0xFFFFFFFF),
-                          borderRadius: BorderRadius.circular(10),
-                          boxShadow: const [
-                            BoxShadow(
-                                blurRadius: 2.0,
-                                spreadRadius: 1.0,
-                                color: Colors.grey)
-                          ]),
-                      child: Row(
-                        children: [
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          Container(
-                            height: 40,
-                            width: 30,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(5),
-                                image: const DecorationImage(
-                                  image: AssetImage("assets/images/re1.png"),
-                                  fit: BoxFit.cover,
-                                )),
-                          ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          const Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                "Resume",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 15),
-                              ),
-                              Text(
-                                "Visit My Resume",
-                                style: TextStyle(
-                                  fontSize: 10,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-                Expanded(
-                  child: Container(
-                    height: 70,
-                    margin: const EdgeInsets.symmetric(horizontal: 10),
-                    decoration: BoxDecoration(
-                        color: const Color(0xFFFFFFFF),
-                        borderRadius: BorderRadius.circular(10),
-                        boxShadow: const [
-                          BoxShadow(
-                              blurRadius: 2.0,
-                              spreadRadius: 1.0,
-                              color: Colors.grey)
-                        ]),
-                    child: Row(
-                      children: [
-                        const SizedBox(
-                          width: 10,
-                        ),
-                        Container(
-                          height: 40,
-                          width: 40,
-                          decoration: const BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: Colors.black54,
-                              image: DecorationImage(
-                                image:
-                                AssetImage("assets/images/website.png"),
-                                fit: BoxFit.cover,
-                              )),
-                        ),
-                        const SizedBox(
-                          width: 10,
-                        ),
-                        const Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              "Web",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 15),
-                            ),
-                            Text(
-                              "Visit My website",
-                              style: TextStyle(fontSize: 10),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            Container(
-              width: double.infinity,
-              height: 10,
-              color: Colors.white,
-            ),
-            Container(
-              width: double.infinity,
-              height: 155,
-              color: Colors.white,
-              child: const Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Icon(Icons.document_scanner_rounded),
-                      SizedBox(
-                        width: 8,
-                      ),
-                      Text(
-                        "Summery",
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      SizedBox(
-                        width: 5,
-                      ),
-                    ],
-                  ),
-                  Divider(
-                    color: Colors.grey,
-                  ),
-                  Center(
-                      child: Text(
-                        " As a skilled Flutter developer, I bring a potent blend of creativity, technical expertise, and a relentless drive for excellence to every project I undertake. With a solid foundation in Dart programming and a keen eye for intuitive design.",
-                        textAlign: TextAlign.center,
-                      ))
-                ],
-              ),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            Container(
-              width: double.infinity,
-              height: 200,
-              color: Colors.white,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  const Row(
-                    children: [
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Icon(Icons.lightbulb),
-                      SizedBox(
-                        width: 8,
-                      ),
-                      Text(
-                        "Technical Skills",
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      SizedBox(
-                        width: 5,
-                      ),
-                    ],
-                  ),
-                  const Divider(
-                    color: Colors.grey,
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(
-                        flex: 2,
-                        child: Container(
-                          height: 30,
-                          decoration: BoxDecoration(
-                            color: const Color(0xFFFFFFFF),
-                            borderRadius: BorderRadius.circular(20),
-                            boxShadow: const [
-                              BoxShadow(
-                                  blurRadius: 1,
-                                  spreadRadius: 1,
-                                  color: Colors.grey)
-                            ],
-                          ),
-                          child: const Center(
-                              child: Text(
-                                "Flutter Development",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontSize: 12,
-                                ),
-                              )),
-                        ),
-                      ),
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(
-                        flex: 2,
-                        child: Container(
-                          height: 30,
-                          decoration: BoxDecoration(
-                            color: const Color(0xFFFFFFFF),
-                            borderRadius: BorderRadius.circular(20),
-                            boxShadow: const [
-                              BoxShadow(
-                                  blurRadius: 1,
-                                  spreadRadius: 1,
-                                  color: Colors.grey)
-                            ],
-                          ),
-                          child: const Center(
-                              child: Text(
-                                "Dart Master",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontSize: 12,
-                                ),
-                              )),
-                        ),
-                      ),
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(
-                        child: Container(
-                          height: 30,
-                          decoration: BoxDecoration(
-                            color: const Color(0xFFFFFFFF),
-                            borderRadius: BorderRadius.circular(20),
-                            boxShadow: const [
-                              BoxShadow(
-                                  blurRadius: 1,
-                                  spreadRadius: 1,
-                                  color: Colors.grey)
-                            ],
-                          ),
-                          child: const Center(
-                              child: Text(
-                                "UI/UX",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontSize: 12,
-                                ),
-                              )),
-                        ),
-                      ),
-                      const SizedBox(
-                        width: 10,
-                      ),
-                    ],
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(
-                        flex: 2,
-                        child: Container(
-                          height: 30,
-                          decoration: BoxDecoration(
-                            color: const Color(0xFFFFFFFF),
-                            borderRadius: BorderRadius.circular(20),
-                            boxShadow: const [
-                              BoxShadow(
-                                  blurRadius: 1,
-                                  spreadRadius: 1,
-                                  color: Colors.grey)
-                            ],
-                          ),
-                          child: const Center(
-                              child: Text(
-                                "Java Ehthusiast ",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontSize: 12,
-                                ),
-                              )),
-                        ),
-                      ),
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(
-                        flex: 1,
-                        child: Container(
-                          height: 30,
-                          decoration: BoxDecoration(
-                            color: const Color(0xFFFFFFFF),
-                            borderRadius: BorderRadius.circular(20),
-                            boxShadow: const [
-                              BoxShadow(
-                                  blurRadius: 1,
-                                  spreadRadius: 1,
-                                  color: Colors.grey)
-                            ],
-                          ),
-                          child: const Center(
-                              child: Text(
-                                "Python ",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontSize: 12,
-                                ),
-                              )),
-                        ),
-                      ),
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(
-                        child: Container(
-                          height: 30,
-                          decoration: BoxDecoration(
-                            color: const Color(0xFFFFFFFF),
-                            borderRadius: BorderRadius.circular(20),
-                            boxShadow: const [
-                              BoxShadow(
-                                  blurRadius: 1,
-                                  spreadRadius: 1,
-                                  color: Colors.grey)
-                            ],
-                          ),
-                          child: const Center(
-                              child: Text(
-                                "ML/AI",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontSize: 12,
-                                ),
-                              )),
-                        ),
-                      ),
-                      const SizedBox(
-                        width: 10,
-                      ),
-                    ],
-                  ),
-                ],
-              ),
+            Text(
+              "Flutter Developer ",
+              style: GoogleFonts.orelegaOne(
+                  textStyle: const TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white)),
             ),
           ],
         ),
+        builder: (context, state) {
+          // This is the content of the sheet that will get
+          // scrolled, if the content is bigger than the available
+          // height of the sheet.
+          return SizedBox(
+            height: 500,
+            child: Column(
+              children: [
+                Container(
+                  margin:
+                      const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                  child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      HeadLineText(
+                        text: 'Projects',
+                        number: '78',
+                      ),
+                      HeadLineText(
+                        text: 'Clients',
+                        number: '65',
+                      ),
+                      HeadLineText(
+                        text: 'Messages',
+                        number: '92',
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  margin:
+                      const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Specialized In",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 22,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 10,),
+                Container(
+                  margin: const EdgeInsets.symmetric(
+                    horizontal: 20,
+                  ),
+                  child:  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        height: 100,
+                        width: 115,
+
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(20),
+
+                        ),
+                        child: const Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.android,color: Colors.white,size: 25,),
+                            Text("Andoriod",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.white),)
+                          ],
+                        ),
+                      ),
+                      Container(
+                        height: 100,
+                        width: 115,
+
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(20),
+
+                        ),
+                        child: const Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            FaIcon(Icons.mark_email_read_outlined,color: Colors.white,size: 25,),
+                            Text("Marketing",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.white),)
+                          ],
+                        ),
+                      ),
+                      Container(
+                        height: 100,
+                        width: 115,
+
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(20),
+
+                        ),
+                        child: const Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.phonelink_rounded,color: Colors.white,size: 25,),
+                            Text("Web/Desk",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.white),)
+                          ],
+                        ),
+                      ),
+                     
+
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 15,),
+                Container(
+                  margin: const EdgeInsets.symmetric(
+                    horizontal: 20,
+                  ),
+                  child:  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        height: 100,
+                        width: 115,
+
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(20),
+
+                        ),
+                        child: const Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.groups_sharp,color: Colors.white,size: 25,),
+                            Text("Collaboration",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.white),)
+                          ],
+                        ),
+                      ),
+                      Container(
+                        height: 100,
+                        width: 115,
+
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(20),
+
+                        ),
+                        child: const Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            FaIcon(Icons.phone_iphone,color: Colors.white,size: 25,),
+                            Text("IOS Dev",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.white),)
+                          ],
+                        ),
+                      ),
+                      Container(
+                        height: 100,
+                        width: 115,
+
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(20),
+
+                        ),
+                        child: const Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.manage_accounts,color: Colors.white,size: 25,),
+                            Text("Management",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.white),)
+                          ],
+                        ),
+                      ),
+
+
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 15,),
+                Container(
+                  margin: const EdgeInsets.symmetric(
+                    horizontal: 20,
+                  ),
+                  child:  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        height: 100,
+                        width: 115,
+
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(20),
+
+                        ),
+                        child: const Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            FaIcon(Icons.search,color: Colors.white,size: 25,),
+                            Text("Research",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.white),)
+                          ],
+                        ),
+                      ),
+                      Container(
+                        height: 100,
+                        width: 115,
+
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(20),
+
+                        ),
+                        child: const Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            FaIcon(Icons.web_outlined,color: Colors.white,size: 25,),
+                            Text("Web Dev",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.white),)
+                          ],
+                        ),
+                      ),
+                      Container(
+                        height: 100,
+                        width: 115,
+
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(20),
+
+                        ),
+                        child: const Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            FaIcon(Icons.shopify_sharp,color: Colors.white,size: 25,),
+                            Text("Shopify",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.white),)
+                          ],
+                        ),
+                      ),
+
+
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          );
+        },
       ),
     );
   }

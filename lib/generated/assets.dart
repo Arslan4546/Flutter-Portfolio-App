@@ -3,13 +3,11 @@ class Assets {
   Assets._();
 
   static const String imagesArslan = 'assets/images/arslan.png';
+  static const String imagesArslan1 = 'assets/images/arslan1.png';
+  static const String imagesFacebook = 'assets/images/facebook.png';
   static const String imagesGithub = 'assets/images/github.png';
   static const String imagesLinkedin = 'assets/images/linkedin.png';
-  static const String imagesRe1 = 'assets/images/re1.png';
-  static const String imagesWal9 = 'assets/images/wal9.png';
-  static const String imagesWallp = 'assets/images/wallp.png';
-  static const String imagesWebsite = 'assets/images/website.png';
-  static const String screenshootSs1 = 'assets/screenshoot/ss1.png';
-  static const String screenshootSs2 = 'assets/screenshoot/ss2.png';
+  static const String imagesPortfolio = 'assets/images/portfolio.png';
+  static const String imagesX = 'assets/images/x.png';
 
 }
