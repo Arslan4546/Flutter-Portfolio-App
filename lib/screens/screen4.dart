@@ -21,23 +21,49 @@ class _Screen4State extends State<Screen4> {
         backgroundColor: Colors.white,
         centerTitle: true,
         title:Container(
-            margin:const  EdgeInsets.only(left: 70),
-            child: const  HeadLineText(number: '', text: 'Messages',)),
+            child: const  HeadLineText(number: 'Conversations', text: '',)),
       ),
-      body:ListView.builder(
-          itemCount: userNames.length,
-          itemBuilder:(context,index){
-        return  ListTile(
-          leading: CircleAvatar(
-            radius: 30,
-            backgroundImage: NetworkImage(userImages[index]),
-          ),
-          title: Text(userNames[index]),
-          subtitle: Text(userMessages[index]),
-          trailing: Text(userTimes[index]),
-        );
+      body:Column(
+        children: [
+         const  SizedBox(height: 20,),
+          Container(
+            height: 40,
+            margin: const EdgeInsets.symmetric(horizontal: 20),
+            child: TextFormField(
 
-      } ),
+              cursorColor: Colors.grey,
+              decoration: InputDecoration(
+                labelText: "Search",
+               prefixIcon: const Icon(Icons.search),
+                fillColor: Colors.grey.withOpacity(0.2),
+               filled: true,
+               border: OutlineInputBorder(
+
+                 borderRadius: BorderRadius.circular(20),
+                 borderSide: BorderSide.none,
+               )
+              ),
+            ),
+          ),
+          const SizedBox(height: 20,),
+          Expanded(
+            child: ListView.builder(
+                itemCount: userNames.length,
+                itemBuilder:(context,index){
+              return  ListTile(
+                leading: CircleAvatar(
+                  radius: 30,
+                  backgroundImage: NetworkImage(userImages[index]),
+                ),
+                title: Text(userNames[index]),
+                subtitle: Text(userMessages[index]),
+                trailing: Text(userTimes[index]),
+              );
+
+            } ),
+          ),
+        ],
+      ),
     );
   }
 }

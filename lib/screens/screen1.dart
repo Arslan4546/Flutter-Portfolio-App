@@ -260,9 +260,14 @@ class _Screen1State extends State<Screen1> {
                   child:  Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const HeadLineText(
-                        text: 'Projects',
-                        number: '78',
+                      GestureDetector(
+                        onTap:(){
+                          Navigator.pushNamed(context, "/screen5");
+          },
+                        child: const HeadLineText(
+                          text: 'Projects',
+                          number: '78',
+                        ),
                       ),
                       GestureDetector(
                         onTap: (){

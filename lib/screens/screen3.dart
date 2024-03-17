@@ -16,8 +16,7 @@ class _Screen3State extends State<Screen3> {
         backgroundColor: Colors.white,
         centerTitle: true,
         title:Container(
-            margin:const  EdgeInsets.only(left: 80),
-            child: const  HeadLineText(number: '', text: 'clients',)),
+            child: const  HeadLineText(number: 'Clients Review', text: '',)),
       ),
       body: const SingleChildScrollView(
         scrollDirection: Axis.vertical,
