@@ -11,7 +11,9 @@ class Assets {
   static const String imagesClient5 = 'assets/images/client5.png';
   static const String imagesClient6 = 'assets/images/client6.png';
   static const String imagesClient7 = 'assets/images/client7.png';
+  static const String imagesEcourse = 'assets/images/ecourse.png';
   static const String imagesFacebook = 'assets/images/facebook.png';
+  static const String imagesFitness = 'assets/images/fitness.png';
   static const String imagesGithub = 'assets/images/github.png';
   static const String imagesLinkedin = 'assets/images/linkedin.png';
   static const String imagesPortfolio = 'assets/images/portfolio.png';
