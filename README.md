@@ -23,8 +23,14 @@ This app not only serves as a portfolio but also as a reflection of Arslan Tariq
 ## Screenshots
 
 <p align="center">
-  <img src="https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/SS1.png" alt="Screenshot 1" width="30%" style="margin: 0 40px;"/>
-  <img src="https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/SS2.png" alt="Screenshot 2" width="30%" style="margin: 0 40px;"/>
+  <img src="https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/ss1.png" alt="Screenshot 1" width="30%" style="margin: 0 40px;"/>
+  <img src="https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/ss2.png" alt="Screenshot 2" width="30%" style="margin: 0 40px;"/>
+   <img src="https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/ss3.png" alt="Screenshot 1" width="30%" style="margin: 0 40px;"/>
+  <img src="https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/ss4.png" alt="Screenshot 2" width="30%" style="margin: 0 40px;"/>
+   <img src="https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/ss5.png" alt="Screenshot 1" width="30%" style="margin: 0 40px;"/>
+  <img src="https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/ss6.png" alt="Screenshot 2" width="30%" style="margin: 0 40px;"/>
+   <img src="https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/ss7.png" alt="Screenshot 1" width="30%" style="margin: 0 40px;"/>
+  <img src="https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/ss8.png" alt="Screenshot 2" width="30%" style="margin: 0 40px;"/>
 </p>
 
 
