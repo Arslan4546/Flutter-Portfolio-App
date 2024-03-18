@@ -15,8 +15,7 @@ class _Screen3State extends State<Screen3> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         centerTitle: true,
-        title:Container(
-            child: const  HeadLineText(number: 'Clients Review', text: '',)),
+        title:const  HeadLineText(number: 'Clients Review', text: '',),
       ),
       body: const SingleChildScrollView(
         scrollDirection: Axis.vertical,

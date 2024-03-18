@@ -20,8 +20,7 @@ class _Screen4State extends State<Screen4> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         centerTitle: true,
-        title:Container(
-            child: const  HeadLineText(number: 'Conversations', text: '',)),
+        title:const  HeadLineText(number: 'Conversations', text: '',),
       ),
       body:Column(
         children: [

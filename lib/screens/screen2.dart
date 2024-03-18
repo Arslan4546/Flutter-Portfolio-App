@@ -180,12 +180,12 @@ class _Screen2State extends State<Screen2> {
               height: 70,
               width: double.infinity,
               margin: const EdgeInsets.symmetric(horizontal: 20),
+              alignment: Alignment.center,
               child: Text("Mobile Application Developer And Open Source Enthusiast",style: GoogleFonts.aBeeZee(
                 textStyle: const TextStyle(fontSize: 24,
                 fontWeight: FontWeight.bold,
                 )
               ),),
-              alignment: Alignment.center,
             ),
             const SizedBox(height: 10,),
             Container(
@@ -223,8 +223,9 @@ class _Screen2State extends State<Screen2> {
                         children: [
                           Container(
 
-                              child: const Icon(Icons.arrow_forward_ios,color: Colors.black,),
-                          margin: const EdgeInsets.only(right: 10),),
+                              margin: const EdgeInsets.only(right: 10),
+
+                              child: const Icon(Icons.arrow_forward_ios,color: Colors.black,),),
 
                         ],
                       )
@@ -269,8 +270,9 @@ class _Screen2State extends State<Screen2> {
                           children: [
                             Container(
 
-                              child: const Icon(Icons.arrow_forward_ios,color: Colors.black,),
-                              margin: const EdgeInsets.only(right: 10),),
+                              margin: const EdgeInsets.only(right: 10),
+
+                              child: const Icon(Icons.arrow_forward_ios,color: Colors.black,),),
 
                           ],
                         )
@@ -315,8 +317,9 @@ class _Screen2State extends State<Screen2> {
                           children: [
                             Container(
 
-                              child: const Icon(Icons.arrow_forward_ios,color: Colors.black,),
-                              margin: const EdgeInsets.only(right: 10),),
+                              margin: const EdgeInsets.only(right: 10),
+
+                              child: const Icon(Icons.arrow_forward_ios,color: Colors.black,),),
 
                           ],
                         )
@@ -361,8 +364,9 @@ class _Screen2State extends State<Screen2> {
                           children: [
                             Container(
 
-                              child: const Icon(Icons.arrow_forward_ios,color: Colors.black,),
-                              margin: const EdgeInsets.only(right: 10),),
+                              margin: const EdgeInsets.only(right: 10),
+
+                              child: const Icon(Icons.arrow_forward_ios,color: Colors.black,),),
 
                           ],
                         )
