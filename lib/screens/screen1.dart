@@ -244,6 +244,22 @@ class _Screen1State extends State<Screen1> {
                       fontWeight: FontWeight.bold,
                       color: Colors.white)),
             ),
+          const   SizedBox(height: 5,),
+            Container(
+              width: double.infinity,
+              height: 200,
+                margin: const EdgeInsets.symmetric(horizontal: 20),
+
+                child: Center(child: Text("👋Hello! My name is Arslan Tariq, and I am a dedicated Flutter developer with a passion for creating high-quality mobile applications. With 2+ years of experience in the field, I have honed my skills in developing intuitive and visually appealing apps that delight users.",style: GoogleFonts.orelegaOne(
+                  textStyle: const TextStyle(
+                    fontSize: 18,
+                    color: Colors.white
+
+                  ),
+
+                ),textAlign: TextAlign.center,),
+                ),
+            )
           ],
         ),
         builder: (context, state) {
