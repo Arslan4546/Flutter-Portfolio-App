@@ -343,7 +343,7 @@ class _Screen1State extends State<Screen1> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Icon(Icons.android,color: Colors.white,size: 25,),
-                            Text("Andoriod",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.white),)
+                            Text("Android",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.white),)
                           ],
                         ),
                       ),
