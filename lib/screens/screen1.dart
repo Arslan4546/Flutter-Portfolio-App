@@ -1,13 +1,8 @@
-import 'dart:ui';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:wtf_sliding_sheet/wtf_sliding_sheet.dart';
-
 import '../components/headlineText.dart';
 
 class Screen1 extends StatefulWidget {
@@ -220,7 +215,7 @@ class _Screen1State extends State<Screen1> {
                                Container(
                                  height: 100,
                                  width: 100,
-                                 decoration: BoxDecoration(
+                                 decoration: const BoxDecoration(
                                    image: DecorationImage(
                                      image: AssetImage("assets/images/alert.png"),
                                      fit: BoxFit.cover
@@ -238,10 +233,10 @@ class _Screen1State extends State<Screen1> {
                            actions: [
                              TextButton(onPressed: (){
                                Navigator.pushNamed(context, "/screen6");
-                             }, child: Text("Yes")),
+                             }, child: const Text("Yes")),
                              TextButton(onPressed: (){
                                Navigator.pop(context);
-                             }, child: Text("No")),
+                             }, child: const Text("No")),
                            ],
                          );
                    }
@@ -258,12 +253,12 @@ class _Screen1State extends State<Screen1> {
                         height: 16,
                         width: 20,
 
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.red,
                           shape: BoxShape.circle,
 
                         ),
-                        child: Center(child: Text("7+",style: TextStyle(
+                        child: const Center(child: Text("7+",style: TextStyle(
                           fontSize: 10,
                           fontWeight: FontWeight.bold,
                           color: Colors.white
