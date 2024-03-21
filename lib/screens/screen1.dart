@@ -1,4 +1,8 @@
+import 'dart:ui';
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -201,6 +205,80 @@ class _Screen1State extends State<Screen1> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         iconTheme: const IconThemeData(color: Colors.white),
+        actions: [
+
+          IconButton(
+            onPressed: (){
+                   showDialog(
+
+                       context: context, builder: (BuildContext context ){
+                         return  AlertDialog(
+                           content:
+                           Column(
+                             mainAxisSize: MainAxisSize.min,
+                             children: [
+                               Container(
+                                 height: 100,
+                                 width: 100,
+                                 decoration: BoxDecoration(
+                                   image: DecorationImage(
+                                     image: AssetImage("assets/images/alert.png"),
+                                     fit: BoxFit.cover
+                                   ),
+
+                                 ),
+
+                               ),
+                             const  Text('Do you want to show your notifications?',style: TextStyle(fontWeight: FontWeight.bold,
+                             ),)
+
+
+                             ],
+                           ),
+                           actions: [
+                             TextButton(onPressed: (){
+                               Navigator.pushNamed(context, "/screen6");
+                             }, child: Text("Yes")),
+                             TextButton(onPressed: (){
+                               Navigator.pop(context);
+                             }, child: Text("No")),
+                           ],
+                         );
+                   }
+                   );
+            },
+
+              icon: Stack(
+                  children:[
+                    const Icon(Icons.notifications_sharp,size: 33,color: Colors.white,),
+                    Positioned(
+                      left: 13,
+                      top: 5,
+                      child: Container(
+                        height: 16,
+                        width: 20,
+
+                        decoration: BoxDecoration(
+                          color: Colors.red,
+                          shape: BoxShape.circle,
+
+                        ),
+                        child: Center(child: Text("7+",style: TextStyle(
+                          fontSize: 10,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white
+                        ),)),
+                      ),
+                    )
+
+                  ]
+              )),
+          const SizedBox(width: 10,),
+
+
+
+
+        ],
       ),
       body: SlidingSheet(
         elevation: 8,
