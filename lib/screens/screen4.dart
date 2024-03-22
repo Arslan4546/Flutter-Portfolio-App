@@ -106,7 +106,7 @@ class _Screen4State extends State<Screen4> {
                             height: 50,
                             width: 330,
                             decoration: BoxDecoration(
-                              color: Colors.grey,
+                              color: Colors.grey.withOpacity(0.3),
                               borderRadius: BorderRadius.circular(30),
 
                             ),
