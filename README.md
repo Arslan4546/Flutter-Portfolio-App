@@ -20,22 +20,6 @@ This app not only serves as a portfolio but also as a reflection of Arslan Tariq
 📫 Let's connect! Feel free to reach out to me via email at arslantariq4546@gmail.com or connect with me on LinkedIn to discuss potential collaborations or just chat about all things Flutter!
 
 
-## Screenshots
-
-<p align="center">
-  <img src="https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/ss1.png" alt="Screenshot 1" width="30%" style="margin: 0 40px;"/>
-  <img src="https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/ss2.png" alt="Screenshot 2" width="30%" style="margin: 0 40px;"/>
-   <img src="https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/ss3.png" alt="Screenshot 1" width="30%" style="margin: 0 40px;"/>
-  <img src="https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/ss4.png" alt="Screenshot 2" width="30%" style="margin: 0 40px;"/>
-   <img src="https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/ss5.png" alt="Screenshot 1" width="30%" style="margin: 0 40px;"/>
-  <img src="https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/ss6.png" alt="Screenshot 2" width="30%" style="margin: 0 40px;"/>
-   <img src="https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/ss7.png" alt="Screenshot 1" width="30%" style="margin: 0 40px;"/>
-  <img src="https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/ss9.png" alt="Screenshot 2" width="30%" style="margin: 0 40px;"/>
-     <img src="https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/ss8.png" alt="Screenshot 1" width="30%" style="margin: 0 40px;"/>
-  <img src="https://github.com/Arslan4546/Portfolio-App-by-ArslanTariq/blob/main/assets/screenshoot/ss10.png" alt="Screenshot 2" width="30%" style="margin: 0 40px;"/>
-</p>
-
-
 ## Contact Me
 
 LinkedIn:https://www.linkedin.com/in/arslan4546/
